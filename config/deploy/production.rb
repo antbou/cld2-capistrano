@@ -10,6 +10,19 @@ server "thecloud2.mycpnv.ch", user: "maw11_11", ssh_options: {
   auth_methods: %w(publickey)
 }
 
+task :copy_dotenv do
+  on roles(:all) do
+    execute :cp, "#{shared_path}/.env #{release_path}/.env"
+  end
+end
+
+set :laravel_version, 8.0
+set :laravel_upload_dotenv_file_on_deploy, false
+# swisscenter disables acls, instead use chmod
+set :laravel_set_acl_paths, false
+
+after 'composer:run', 'copy_dotenv'
+after 'composer:run', 'laravel:migrate'
 
 # role-based syntax
 # ==================
@@ -32,33 +45,3 @@ server "thecloud2.mycpnv.ch", user: "maw11_11", ssh_options: {
 # For available Capistrano configuration variables see the documentation page.
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
-
-
-
-# Custom SSH Options
-# ==================
-# You may pass any option but keep in mind that net/ssh understands a
-# limited set of options, consult the Net::SSH documentation.
-# http://net-ssh.github.io/net-ssh/classes/Net/SSH.html#method-c-start
-#
-# Global options
-# --------------
-# set :ssh_options, {
-#   user: maw11_11,
-#   keys: %w(~/.ssh/id_rsa),
-#   forward_agent: false,
-#   auth_methods: %w(publickey)
-# }
-#
-# The server-based syntax can be used to override options:
-# ------------------------------------
-# server "example.com",
-#   user: "user_name",
-#   roles: %w{web app},
-#   ssh_options: {
-#     user: "user_name", # overrides user setting above
-#     keys: %w(/home/user_name/.ssh/id_rsa),
-#     forward_agent: false,
-#     auth_methods: %w(publickey password)
-#     # password: "please use keys"
-#   }

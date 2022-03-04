@@ -9,6 +9,7 @@ set :repo_url, "https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git"
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/maw11_11/thecloud2.mycpnv.ch"
+set :branch, 'main'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -37,5 +38,3 @@ set :deploy_to, "/home/maw11_11/thecloud2.mycpnv.ch"
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
-
-set :laravel_version, 9.0
