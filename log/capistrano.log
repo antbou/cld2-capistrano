@@ -1,0 +1,799 @@
+# Logfile created on 2022-03-09 15:36:54 +0100 by logger.rb/v1.4.3
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:36:54 +0100 cap production deploy:setup
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:37:07 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0fd8b9a7] Running /usr/bin/env mkdir -p /tmp as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [0fd8b9a7] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 15:43:20 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4ee85527] Running /usr/bin/env mkdir -p /tmp as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [4ee85527] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 16:21:19 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c8e0687d] Running /usr/bin/env mkdir -p /tmp as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [c8e0687d] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c8e0687d] Finished in 0.300 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2cc5b203be2d4d89689d.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2cc5b203be2d4d89689d.sh 100.0%
+  INFO [dd4b96f0] Running /usr/bin/env chmod 700 /tmp/git-ssh-2cc5b203be2d4d89689d.sh as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [dd4b96f0] Command: /usr/bin/env chmod 700 /tmp/git-ssh-2cc5b203be2d4d89689d.sh
+  INFO [dd4b96f0] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [87567011] Running /usr/bin/env git ls-remote https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git HEAD as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [87567011] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2cc5b203be2d4d89689d.sh" ; /usr/bin/env git ls-remote https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git HEAD )
+ DEBUG [87567011] 	2d434bfb76ecadc72c37bf66e285a6e001bbbe21	HEAD
+  INFO [87567011] Finished in 0.337 seconds with exit status 0 (successful).
+  INFO [810490ca] Running /usr/bin/env mkdir -p /home/maw11_5/thecloud5.cpnv.ch/shared /home/maw11_5/thecloud5.cpnv.ch/releases as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [810490ca] Command: /usr/bin/env mkdir -p /home/maw11_5/thecloud5.cpnv.ch/shared /home/maw11_5/thecloud5.cpnv.ch/releases
+  INFO [810490ca] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [5f562034] Running /usr/bin/env mkdir -p /home/maw11_5/thecloud5.cpnv.ch/shared/storage/app /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/cache /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/sessions /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/views /home/maw11_5/thecloud5.cpnv.ch/shared/storage/logs as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [5f562034] Command: /usr/bin/env mkdir -p /home/maw11_5/thecloud5.cpnv.ch/shared/storage/app /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/cache /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/sessions /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/views /home/maw11_5/thecloud5.cpnv.ch/shared/storage/logs
+  INFO [5f562034] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [6509f59a] Running [ -f /home/maw11_5/thecloud5.cpnv.ch/current/REVISION ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [6509f59a] Command: [ -f /home/maw11_5/thecloud5.cpnv.ch/current/REVISION ]
+ DEBUG [6509f59a] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [f432f1fb] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f432f1fb] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [f432f1fb] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [3d73afec] Running /usr/bin/env mkdir -p storage/app as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [3d73afec] Command: cd /home/maw11_5/thecloud5.cpnv.ch/shared && /usr/bin/env mkdir -p storage/app
+  INFO [3d73afec] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [103815ec] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [103815ec] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [103815ec] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [777b59b4] Running /usr/bin/env mkdir -p storage/framework/cache as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [777b59b4] Command: cd /home/maw11_5/thecloud5.cpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [777b59b4] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [02616e3a] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [02616e3a] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [02616e3a] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [59bbf409] Running /usr/bin/env mkdir -p storage/framework/sessions as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [59bbf409] Command: cd /home/maw11_5/thecloud5.cpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [59bbf409] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [d0c7a4e6] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [d0c7a4e6] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [d0c7a4e6] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [1800096e] Running /usr/bin/env mkdir -p storage/framework/views as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [1800096e] Command: cd /home/maw11_5/thecloud5.cpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/views
+  INFO [1800096e] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [f65cf9cd] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f65cf9cd] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [f65cf9cd] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [dff611ff] Running /usr/bin/env mkdir -p storage/logs as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [dff611ff] Command: cd /home/maw11_5/thecloud5.cpnv.ch/shared && /usr/bin/env mkdir -p storage/logs
+  INFO [dff611ff] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [76934f5b] Running [ -f /home/maw11_5/thecloud5.cpnv.ch/repo/HEAD ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [76934f5b] Command: [ -f /home/maw11_5/thecloud5.cpnv.ch/repo/HEAD ]
+ DEBUG [76934f5b] Finished in 0.094 seconds with exit status 1 (failed).
+ DEBUG [bab45549] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [bab45549] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch'" 1>&2; false; fi
+ DEBUG [bab45549] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [ccbc7ab8] Running /usr/bin/env git clone --mirror https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git /home/maw11_5/thecloud5.cpnv.ch/repo as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [ccbc7ab8] Command: cd /home/maw11_5/thecloud5.cpnv.ch && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2cc5b203be2d4d89689d.sh" ; /usr/bin/env git clone --mirror https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git /home/maw11_5/thecloud5.cpnv.ch/repo )
+ DEBUG [ccbc7ab8] 	Cloning into bare repository '/home/maw11_5/thecloud5.cpnv.ch/repo'...
+  INFO [ccbc7ab8] Finished in 0.502 seconds with exit status 0 (successful).
+ DEBUG [2d4d2c7b] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/repo'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [2d4d2c7b] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [2d4d2c7b] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [94b362a5] Running /usr/bin/env git remote set-url origin https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [94b362a5] Command: cd /home/maw11_5/thecloud5.cpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2cc5b203be2d4d89689d.sh" ; /usr/bin/env git remote set-url origin https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git )
+  INFO [94b362a5] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [5c4be446] Running /usr/bin/env git remote update --prune as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [5c4be446] Command: cd /home/maw11_5/thecloud5.cpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2cc5b203be2d4d89689d.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [5c4be446] 	Fetching origin
+  INFO [5c4be446] Finished in 0.296 seconds with exit status 0 (successful).
+ DEBUG [abe77378] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/repo'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [abe77378] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [abe77378] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [f64e8366] Running /usr/bin/env mkdir -p /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121 as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f64e8366] Command: cd /home/maw11_5/thecloud5.cpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2cc5b203be2d4d89689d.sh" ; /usr/bin/env mkdir -p /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121 )
+  INFO [f64e8366] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [61b42184] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121 as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [61b42184] Command: cd /home/maw11_5/thecloud5.cpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2cc5b203be2d4d89689d.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121 )
+  INFO [61b42184] Finished in 0.113 seconds with exit status 0 (successful).
+ DEBUG [cd28d367] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/repo'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [cd28d367] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [cd28d367] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [558f1a3c] Running /usr/bin/env git rev-list --max-count=1 main as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [558f1a3c] Command: cd /home/maw11_5/thecloud5.cpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2cc5b203be2d4d89689d.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [558f1a3c] 	2d434bfb76ecadc72c37bf66e285a6e001bbbe21
+ DEBUG [558f1a3c] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [3971ddc2] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [3971ddc2] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121'" 1>&2; false; fi
+ DEBUG [3971ddc2] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [38e9914b] Running /usr/bin/env echo "2d434bfb76ecadc72c37bf66e285a6e001bbbe21" > REVISION as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [38e9914b] Command: cd /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121 && /usr/bin/env echo "2d434bfb76ecadc72c37bf66e285a6e001bbbe21" > REVISION
+  INFO [38e9914b] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [d2e57d21] Running /usr/bin/env mkdir -p /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [d2e57d21] Command: /usr/bin/env mkdir -p /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework
+  INFO [d2e57d21] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [03ae48b6] Running [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/app ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [03ae48b6] Command: [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/app ]
+ DEBUG [03ae48b6] Finished in 0.091 seconds with exit status 1 (failed).
+ DEBUG [180c7af6] Running [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/app ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [180c7af6] Command: [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/app ]
+ DEBUG [180c7af6] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [df29735c] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/app as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [df29735c] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/app
+  INFO [df29735c] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [8aa5f892] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/app /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/app as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [8aa5f892] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/app /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/app
+  INFO [8aa5f892] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [e681d4cd] Running [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/cache ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [e681d4cd] Command: [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/cache ]
+ DEBUG [e681d4cd] Finished in 0.089 seconds with exit status 1 (failed).
+ DEBUG [9c11c073] Running [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/cache ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [9c11c073] Command: [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/cache ]
+ DEBUG [9c11c073] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [94e26044] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/cache as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [94e26044] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/cache
+  INFO [94e26044] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [619dea8a] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/cache /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/cache as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [619dea8a] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/cache /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/cache
+  INFO [619dea8a] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [f87c4b56] Running [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/sessions ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f87c4b56] Command: [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/sessions ]
+ DEBUG [f87c4b56] Finished in 0.088 seconds with exit status 1 (failed).
+ DEBUG [d2d003f5] Running [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/sessions ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [d2d003f5] Command: [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/sessions ]
+ DEBUG [d2d003f5] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [e3ea23c0] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/sessions as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [e3ea23c0] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/sessions
+  INFO [e3ea23c0] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [01e013c3] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/sessions /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/sessions as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [01e013c3] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/sessions /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/sessions
+  INFO [01e013c3] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [61029dd0] Running [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/views ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [61029dd0] Command: [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/views ]
+ DEBUG [61029dd0] Finished in 0.088 seconds with exit status 1 (failed).
+ DEBUG [a5b99a60] Running [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/views ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [a5b99a60] Command: [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/views ]
+ DEBUG [a5b99a60] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [faff1f9c] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/views as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [faff1f9c] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/views
+  INFO [faff1f9c] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [f3c0892f] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/views /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/views as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f3c0892f] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/framework/views /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/framework/views
+  INFO [f3c0892f] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [f063256c] Running [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/logs ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f063256c] Command: [ -L /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/logs ]
+ DEBUG [f063256c] Finished in 0.088 seconds with exit status 1 (failed).
+ DEBUG [ca910471] Running [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/logs ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [ca910471] Command: [ -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/logs ]
+ DEBUG [ca910471] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [67ba80e6] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/logs as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [67ba80e6] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/logs
+  INFO [67ba80e6] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [d0ca280d] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/logs /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/logs as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [d0ca280d] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.cpnv.ch/shared/storage/logs /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121/storage/logs
+  INFO [d0ca280d] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [df8adb03] Running if test ! -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [df8adb03] Command: if test ! -d /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121; then echo "Directory does not exist '/home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121'" 1>&2; false; fi
+ DEBUG [df8adb03] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [25df0c64] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [25df0c64] Command: cd /home/maw11_5/thecloud5.cpnv.ch/releases/20220309152121 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+ DEBUG [25df0c64] 	
+ DEBUG [25df0c64] 	*** Your attention please! ***
+ DEBUG [25df0c64] 	We cannot automatically detect which website you're running this script for.
+ DEBUG [25df0c64] 	Additionally, it looks like you're running this script from a cron task.
+ DEBUG [25df0c64] 	
+ DEBUG [25df0c64] 	Please edit your cron job and use the full path to the php version you wish to run.
+
+Available php binaries are:
+
+ DEBUG [25df0c64] 	/usr/bin/php54
+ DEBUG [25df0c64] 	/usr/bin/php55
+ DEBUG [25df0c64] 	/usr/bin/php56
+ DEBUG [25df0c64] 	/usr/bin/php70
+ DEBUG [25df0c64] 	/usr/bin/php71
+ DEBUG [25df0c64] 	/usr/bin/php72
+ DEBUG [25df0c64] 	/usr/bin/php73
+ DEBUG [25df0c64] 	/usr/bin/php74
+/usr/bin/php80
+/usr/bin/php53
+/usr/bin/php52
+/usr/bin/php51
+/usr/bin/php44
+/usr/bin/php81
+
+Execution aborted.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 16:24:04 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [3461044d] Running /usr/bin/env mkdir -p /tmp as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [3461044d] Command: /usr/bin/env mkdir -p /tmp
+  INFO [3461044d] Finished in 0.301 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-45a2e9b89c9ba65b92fa.sh 0.0%
+  INFO Uploading /tmp/git-ssh-45a2e9b89c9ba65b92fa.sh 100.0%
+  INFO [8b49b516] Running /usr/bin/env chmod 700 /tmp/git-ssh-45a2e9b89c9ba65b92fa.sh as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [8b49b516] Command: /usr/bin/env chmod 700 /tmp/git-ssh-45a2e9b89c9ba65b92fa.sh
+  INFO [8b49b516] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [de42c906] Running /usr/bin/env git ls-remote https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git HEAD as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [de42c906] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-45a2e9b89c9ba65b92fa.sh" ; /usr/bin/env git ls-remote https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git HEAD )
+ DEBUG [de42c906] 	2d434bfb76ecadc72c37bf66e285a6e001bbbe21	HEAD
+  INFO [de42c906] Finished in 0.300 seconds with exit status 0 (successful).
+  INFO [e1704dac] Running /usr/bin/env mkdir -p /home/maw11_5/thecloud5.mycpnv.ch/shared /home/maw11_5/thecloud5.mycpnv.ch/releases as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [e1704dac] Command: /usr/bin/env mkdir -p /home/maw11_5/thecloud5.mycpnv.ch/shared /home/maw11_5/thecloud5.mycpnv.ch/releases
+  INFO [e1704dac] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [30a080a8] Running /usr/bin/env mkdir -p /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/app /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/cache /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/sessions /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/views /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/logs as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [30a080a8] Command: /usr/bin/env mkdir -p /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/app /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/cache /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/sessions /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/views /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/logs
+  INFO [30a080a8] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [8be1e847] Running [ -f /home/maw11_5/thecloud5.mycpnv.ch/current/REVISION ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [8be1e847] Command: [ -f /home/maw11_5/thecloud5.mycpnv.ch/current/REVISION ]
+ DEBUG [8be1e847] Finished in 0.092 seconds with exit status 1 (failed).
+ DEBUG [b0d8435d] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [b0d8435d] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [b0d8435d] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [45acdd50] Running /usr/bin/env mkdir -p storage/app as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [45acdd50] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/app
+ DEBUG [45acdd50] 	Info: This virtualhost uses php74.
+  INFO [45acdd50] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [1d374041] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [1d374041] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [1d374041] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [b1f000dc] Running /usr/bin/env mkdir -p storage/framework/cache as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [b1f000dc] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/cache
+ DEBUG [b1f000dc] 	Info: This virtualhost uses php74.
+  INFO [b1f000dc] Finished in 0.093 seconds with exit status 0 (successful).
+ DEBUG [97c4a5f3] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [97c4a5f3] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [97c4a5f3] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [8242bd14] Running /usr/bin/env mkdir -p storage/framework/sessions as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [8242bd14] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/sessions
+ DEBUG [8242bd14] 	Info: This virtualhost uses php74.
+  INFO [8242bd14] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [0cb3f9c9] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [0cb3f9c9] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [0cb3f9c9] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [f547d861] Running /usr/bin/env mkdir -p storage/framework/views as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f547d861] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/views
+ DEBUG [f547d861] 	Info: This virtualhost uses php74.
+  INFO [f547d861] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [6b9f49b1] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [6b9f49b1] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [6b9f49b1] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [1bc09d58] Running /usr/bin/env mkdir -p storage/logs as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [1bc09d58] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/logs
+ DEBUG [1bc09d58] 	Info: This virtualhost uses php74.
+  INFO [1bc09d58] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [f6bba995] Running [ -f /home/maw11_5/thecloud5.mycpnv.ch/repo/HEAD ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f6bba995] Command: [ -f /home/maw11_5/thecloud5.mycpnv.ch/repo/HEAD ]
+ DEBUG [f6bba995] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [5c4100d2] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [5c4100d2] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch'" 1>&2; false; fi
+ DEBUG [5c4100d2] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [a9766e8a] Running /usr/bin/env git clone --mirror https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git /home/maw11_5/thecloud5.mycpnv.ch/repo as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [a9766e8a] Command: cd /home/maw11_5/thecloud5.mycpnv.ch && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-45a2e9b89c9ba65b92fa.sh" ; /usr/bin/env git clone --mirror https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git /home/maw11_5/thecloud5.mycpnv.ch/repo )
+ DEBUG [a9766e8a] 	Info: This virtualhost uses php74.
+ DEBUG [a9766e8a] 	Cloning into bare repository '/home/maw11_5/thecloud5.mycpnv.ch/repo'...
+  INFO [a9766e8a] Finished in 0.521 seconds with exit status 0 (successful).
+ DEBUG [9b1123bc] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/repo'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [9b1123bc] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [9b1123bc] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [f2d34ac2] Running /usr/bin/env git remote set-url origin https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f2d34ac2] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-45a2e9b89c9ba65b92fa.sh" ; /usr/bin/env git remote set-url origin https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git )
+ DEBUG [f2d34ac2] 	Info: This virtualhost uses php74.
+  INFO [f2d34ac2] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [4d8d50af] Running /usr/bin/env git remote update --prune as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [4d8d50af] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-45a2e9b89c9ba65b92fa.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4d8d50af] 	Info: This virtualhost uses php74.
+ DEBUG [4d8d50af] 	Fetching origin
+  INFO [4d8d50af] Finished in 0.304 seconds with exit status 0 (successful).
+ DEBUG [a0961b81] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/repo'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [a0961b81] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [a0961b81] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [1dad0063] Running /usr/bin/env mkdir -p /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406 as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [1dad0063] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-45a2e9b89c9ba65b92fa.sh" ; /usr/bin/env mkdir -p /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406 )
+ DEBUG [1dad0063] 	Info: This virtualhost uses php74.
+  INFO [1dad0063] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [22bf1c00] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406 as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [22bf1c00] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-45a2e9b89c9ba65b92fa.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406 )
+ DEBUG [22bf1c00] 	Info: This virtualhost uses php74.
+  INFO [22bf1c00] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [485c4e7a] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/repo'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [485c4e7a] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [485c4e7a] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [02bbc548] Running /usr/bin/env git rev-list --max-count=1 main as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [02bbc548] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-45a2e9b89c9ba65b92fa.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [02bbc548] 	Info: This virtualhost uses php74.
+ DEBUG [02bbc548] 	2d434bfb76ecadc72c37bf66e285a6e001bbbe21
+ DEBUG [02bbc548] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [a520cfa3] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [a520cfa3] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406'" 1>&2; false; fi
+ DEBUG [a520cfa3] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [f1ea666e] Running /usr/bin/env echo "Info: This virtualhost uses php74.
+2d434bfb76ecadc72c37bf66e285a6e001bbbe21" > REVISION as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f1ea666e] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406 && /usr/bin/env echo "Info: This virtualhost uses php74.
+2d434bfb76ecadc72c37bf66e285a6e001bbbe21" > REVISION
+ DEBUG [f1ea666e] 	Info: This virtualhost uses php74.
+  INFO [f1ea666e] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [58464614] Running /usr/bin/env mkdir -p /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [58464614] Command: /usr/bin/env mkdir -p /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework
+  INFO [58464614] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [502269b5] Running [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/app ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [502269b5] Command: [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/app ]
+ DEBUG [502269b5] Finished in 0.093 seconds with exit status 1 (failed).
+ DEBUG [c63e59ae] Running [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/app ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [c63e59ae] Command: [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/app ]
+ DEBUG [c63e59ae] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [4f3b62a0] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/app as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [4f3b62a0] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/app
+  INFO [4f3b62a0] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [ddfcaf6a] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/app /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/app as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [ddfcaf6a] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/app /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/app
+  INFO [ddfcaf6a] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [f8b9c8cf] Running [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/cache ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f8b9c8cf] Command: [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/cache ]
+ DEBUG [f8b9c8cf] Finished in 0.089 seconds with exit status 1 (failed).
+ DEBUG [f6ccd1db] Running [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/cache ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f6ccd1db] Command: [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/cache ]
+ DEBUG [f6ccd1db] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [dffc85cf] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/cache as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [dffc85cf] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/cache
+  INFO [dffc85cf] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [50116501] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/cache /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/cache as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [50116501] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/cache /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/cache
+  INFO [50116501] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [61929655] Running [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/sessions ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [61929655] Command: [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/sessions ]
+ DEBUG [61929655] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [9d25341e] Running [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/sessions ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [9d25341e] Command: [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/sessions ]
+ DEBUG [9d25341e] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [5e475a8a] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/sessions as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [5e475a8a] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/sessions
+  INFO [5e475a8a] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [e680b85d] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/sessions /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/sessions as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [e680b85d] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/sessions /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/sessions
+  INFO [e680b85d] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [54cfdd9e] Running [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/views ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [54cfdd9e] Command: [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/views ]
+ DEBUG [54cfdd9e] Finished in 0.089 seconds with exit status 1 (failed).
+ DEBUG [d165b45a] Running [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/views ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [d165b45a] Command: [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/views ]
+ DEBUG [d165b45a] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [b369c828] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/views as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [b369c828] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/views
+  INFO [b369c828] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [f883516c] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/views /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/views as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f883516c] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/framework/views /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/framework/views
+  INFO [f883516c] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [9a2b055d] Running [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/logs ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [9a2b055d] Command: [ -L /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/logs ]
+ DEBUG [9a2b055d] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [121d38af] Running [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/logs ] as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [121d38af] Command: [ -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/logs ]
+ DEBUG [121d38af] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [d6ddd238] Running /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/logs as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [d6ddd238] Command: /usr/bin/env rm -rf /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/logs
+  INFO [d6ddd238] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [09600a6b] Running /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/logs /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/logs as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [09600a6b] Command: /usr/bin/env ln -s /home/maw11_5/thecloud5.mycpnv.ch/shared/storage/logs /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406/storage/logs
+  INFO [09600a6b] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [f7085139] Running if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406'" 1>&2; false; fi as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [f7085139] Command: if test ! -d /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406; then echo "Directory does not exist '/home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406'" 1>&2; false; fi
+ DEBUG [f7085139] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [5e518bc9] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as maw11_5@thecloud5.mycpnv.ch
+ DEBUG [5e518bc9] Command: cd /home/maw11_5/thecloud5.mycpnv.ch/releases/20220309152406 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+ DEBUG [5e518bc9] 	Info: This virtualhost uses php74.
+ DEBUG [5e518bc9] 	Your lock file does not contain a compatible set of packages. Please run composer update.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 16:36:18 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [deb0662c] Running /usr/bin/env mkdir -p /tmp as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [deb0662c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [deb0662c] Finished in 0.302 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-9715ee10084255b63134.sh 0.0%
+  INFO Uploading /tmp/git-ssh-9715ee10084255b63134.sh 100.0%
+  INFO [dead1336] Running /usr/bin/env chmod 700 /tmp/git-ssh-9715ee10084255b63134.sh as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [dead1336] Command: /usr/bin/env chmod 700 /tmp/git-ssh-9715ee10084255b63134.sh
+  INFO [dead1336] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [aaaa61d7] Running /usr/bin/env git ls-remote https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git HEAD as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [aaaa61d7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9715ee10084255b63134.sh" ; /usr/bin/env git ls-remote https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git HEAD )
+ DEBUG [aaaa61d7] 	2d434bfb76ecadc72c37bf66e285a6e001bbbe21	HEAD
+  INFO [aaaa61d7] Finished in 0.316 seconds with exit status 0 (successful).
+  INFO [0c6ccb12] Running /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/shared /home/maw11_12/thecloud12.mycpnv.ch/releases as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [0c6ccb12] Command: /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/shared /home/maw11_12/thecloud12.mycpnv.ch/releases
+  INFO [0c6ccb12] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [efdaa6e9] Running /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/app /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/cache /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/sessions /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/views /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/logs as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [efdaa6e9] Command: /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/app /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/cache /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/sessions /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/views /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/logs
+  INFO [efdaa6e9] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [1be92644] Running [ -f /home/maw11_12/thecloud12.mycpnv.ch/current/REVISION ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [1be92644] Command: [ -f /home/maw11_12/thecloud12.mycpnv.ch/current/REVISION ]
+ DEBUG [1be92644] Finished in 0.091 seconds with exit status 1 (failed).
+ DEBUG [610e7087] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [610e7087] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [610e7087] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [e0bbc4d8] Running /usr/bin/env mkdir -p storage/app as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [e0bbc4d8] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/app
+ DEBUG [e0bbc4d8] 	Info: This virtualhost uses php80.
+  INFO [e0bbc4d8] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [a48a6723] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [a48a6723] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [a48a6723] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [f41cd37a] Running /usr/bin/env mkdir -p storage/framework/cache as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [f41cd37a] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/cache
+ DEBUG [f41cd37a] 	Info: This virtualhost uses php80.
+  INFO [f41cd37a] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [04bd99c3] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [04bd99c3] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [04bd99c3] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [765e0530] Running /usr/bin/env mkdir -p storage/framework/sessions as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [765e0530] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/sessions
+ DEBUG [765e0530] 	Info: This virtualhost uses php80.
+  INFO [765e0530] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [519c0ac4] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [519c0ac4] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [519c0ac4] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [e4f1f1a6] Running /usr/bin/env mkdir -p storage/framework/views as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [e4f1f1a6] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/views
+ DEBUG [e4f1f1a6] 	Info: This virtualhost uses php80.
+  INFO [e4f1f1a6] Finished in 0.091 seconds with exit status 0 (successful).
+ DEBUG [85b9b8e9] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [85b9b8e9] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [85b9b8e9] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [8014955b] Running /usr/bin/env mkdir -p storage/logs as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [8014955b] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/logs
+ DEBUG [8014955b] 	Info: This virtualhost uses php80.
+  INFO [8014955b] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [e6aeebf1] Running [ -f /home/maw11_12/thecloud12.mycpnv.ch/repo/HEAD ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [e6aeebf1] Command: [ -f /home/maw11_12/thecloud12.mycpnv.ch/repo/HEAD ]
+ DEBUG [e6aeebf1] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [a0030bba] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [a0030bba] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch'" 1>&2; false; fi
+ DEBUG [a0030bba] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [945fdb3e] Running /usr/bin/env git clone --mirror https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git /home/maw11_12/thecloud12.mycpnv.ch/repo as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [945fdb3e] Command: cd /home/maw11_12/thecloud12.mycpnv.ch && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9715ee10084255b63134.sh" ; /usr/bin/env git clone --mirror https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git /home/maw11_12/thecloud12.mycpnv.ch/repo )
+ DEBUG [945fdb3e] 	Info: This virtualhost uses php80.
+ DEBUG [945fdb3e] 	Cloning into bare repository '/home/maw11_12/thecloud12.mycpnv.ch/repo'...
+  INFO [945fdb3e] Finished in 0.495 seconds with exit status 0 (successful).
+ DEBUG [3ece32b9] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [3ece32b9] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [3ece32b9] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [170f776b] Running /usr/bin/env git remote set-url origin https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [170f776b] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9715ee10084255b63134.sh" ; /usr/bin/env git remote set-url origin https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git )
+ DEBUG [170f776b] 	Info: This virtualhost uses php80.
+  INFO [170f776b] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [9e63f41e] Running /usr/bin/env git remote update --prune as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [9e63f41e] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9715ee10084255b63134.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9e63f41e] 	Info: This virtualhost uses php80.
+ DEBUG [9e63f41e] 	Fetching origin
+  INFO [9e63f41e] Finished in 0.298 seconds with exit status 0 (successful).
+ DEBUG [fbe6348e] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [fbe6348e] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [fbe6348e] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [91bfb9f6] Running /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620 as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [91bfb9f6] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9715ee10084255b63134.sh" ; /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620 )
+ DEBUG [91bfb9f6] 	Info: This virtualhost uses php80.
+  INFO [91bfb9f6] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [c5c9d143] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620 as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [c5c9d143] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9715ee10084255b63134.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620 )
+ DEBUG [c5c9d143] 	Info: This virtualhost uses php80.
+  INFO [c5c9d143] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [f6a770a7] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [f6a770a7] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [f6a770a7] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [cb1d4806] Running /usr/bin/env git rev-list --max-count=1 main as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [cb1d4806] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9715ee10084255b63134.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [cb1d4806] 	Info: This virtualhost uses php80.
+ DEBUG [cb1d4806] 	2d434bfb76ecadc72c37bf66e285a6e001bbbe21
+ DEBUG [cb1d4806] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [cbc94a7d] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [cbc94a7d] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620'" 1>&2; false; fi
+ DEBUG [cbc94a7d] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [34345907] Running /usr/bin/env echo "Info: This virtualhost uses php80.
+2d434bfb76ecadc72c37bf66e285a6e001bbbe21" > REVISION as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [34345907] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620 && /usr/bin/env echo "Info: This virtualhost uses php80.
+2d434bfb76ecadc72c37bf66e285a6e001bbbe21" > REVISION
+ DEBUG [34345907] 	Info: This virtualhost uses php80.
+  INFO [34345907] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [3d94a9e8] Running /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [3d94a9e8] Command: /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework
+  INFO [3d94a9e8] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [70dabddb] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/app ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [70dabddb] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/app ]
+ DEBUG [70dabddb] Finished in 0.090 seconds with exit status 1 (failed).
+ DEBUG [60373f4e] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/app ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [60373f4e] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/app ]
+ DEBUG [60373f4e] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [953a451f] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/app as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [953a451f] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/app
+  INFO [953a451f] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [0ca916dc] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/app /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/app as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [0ca916dc] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/app /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/app
+  INFO [0ca916dc] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [86e3529c] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/cache ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [86e3529c] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/cache ]
+ DEBUG [86e3529c] Finished in 0.092 seconds with exit status 1 (failed).
+ DEBUG [1b814880] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/cache ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [1b814880] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/cache ]
+ DEBUG [1b814880] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [1dd516ba] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/cache as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [1dd516ba] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/cache
+  INFO [1dd516ba] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [6c35ff75] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/cache /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/cache as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [6c35ff75] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/cache /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/cache
+  INFO [6c35ff75] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [e373c927] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/sessions ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [e373c927] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/sessions ]
+ DEBUG [e373c927] Finished in 0.089 seconds with exit status 1 (failed).
+ DEBUG [fd92de70] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/sessions ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [fd92de70] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/sessions ]
+ DEBUG [fd92de70] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [997f8f17] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/sessions as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [997f8f17] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/sessions
+  INFO [997f8f17] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [944428e7] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/sessions /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/sessions as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [944428e7] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/sessions /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/sessions
+  INFO [944428e7] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [022690ce] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/views ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [022690ce] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/views ]
+ DEBUG [022690ce] Finished in 0.090 seconds with exit status 1 (failed).
+ DEBUG [2f9962bf] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/views ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [2f9962bf] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/views ]
+ DEBUG [2f9962bf] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [020613eb] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/views as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [020613eb] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/views
+  INFO [020613eb] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [fa4ff253] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/views /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/views as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [fa4ff253] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/views /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/framework/views
+  INFO [fa4ff253] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [03cefaba] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/logs ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [03cefaba] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/logs ]
+ DEBUG [03cefaba] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [01782965] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/logs ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [01782965] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/logs ]
+ DEBUG [01782965] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [9d52e1d6] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/logs as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [9d52e1d6] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/logs
+  INFO [9d52e1d6] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [b8e2e5d0] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/logs /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/logs as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [b8e2e5d0] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/logs /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/logs
+  INFO [b8e2e5d0] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [5688fffa] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [5688fffa] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620'" 1>&2; false; fi
+ DEBUG [5688fffa] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [c88d76f9] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [c88d76f9] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+ DEBUG [c88d76f9] 	Info: This virtualhost uses php80.
+  INFO [c88d76f9] Finished in 3.112 seconds with exit status 0 (successful).
+ DEBUG [1a25f168] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [1a25f168] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620'" 1>&2; false; fi
+ DEBUG [1a25f168] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [a6edb21e] Running /usr/bin/env php artisan storage:link --env=production as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [a6edb21e] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620 && /usr/bin/env php artisan storage:link --env=production
+ DEBUG [a6edb21e] 	Info: This virtualhost uses php80.
+ DEBUG [a6edb21e] 	The [/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/public/storage] link has been connected to [/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/storage/app/public].
+ DEBUG [a6edb21e] 	The links have been created.
+  INFO [a6edb21e] Finished in 0.252 seconds with exit status 0 (successful).
+  INFO [7de02805] Running /usr/bin/env cp /home/maw11_12/thecloud12.mycpnv.ch/shared/.env /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/.env as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [7de02805] Command: /usr/bin/env cp /home/maw11_12/thecloud12.mycpnv.ch/shared/.env /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309153620/.env
+ DEBUG [7de02805] 	cp: cannot stat '/home/maw11_12/thecloud12.mycpnv.ch/shared/.env': No such file or directory
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-09 16:43:00 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [92da9c6c] Running /usr/bin/env mkdir -p /tmp as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [92da9c6c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [92da9c6c] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-b49a2a046e1cd18ed281.sh 0.0%
+  INFO Uploading /tmp/git-ssh-b49a2a046e1cd18ed281.sh 100.0%
+  INFO [26b343ec] Running /usr/bin/env chmod 700 /tmp/git-ssh-b49a2a046e1cd18ed281.sh as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [26b343ec] Command: /usr/bin/env chmod 700 /tmp/git-ssh-b49a2a046e1cd18ed281.sh
+  INFO [26b343ec] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [9035a3f4] Running /usr/bin/env git ls-remote https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git HEAD as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [9035a3f4] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b49a2a046e1cd18ed281.sh" ; /usr/bin/env git ls-remote https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git HEAD )
+ DEBUG [9035a3f4] 	2d434bfb76ecadc72c37bf66e285a6e001bbbe21	HEAD
+  INFO [9035a3f4] Finished in 0.292 seconds with exit status 0 (successful).
+  INFO [eb328ef8] Running /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/shared /home/maw11_12/thecloud12.mycpnv.ch/releases as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [eb328ef8] Command: /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/shared /home/maw11_12/thecloud12.mycpnv.ch/releases
+  INFO [eb328ef8] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [61bb3349] Running /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/app /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/cache /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/sessions /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/views /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/logs as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [61bb3349] Command: /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/app /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/cache /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/sessions /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/views /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/logs
+  INFO [61bb3349] Finished in 0.086 seconds with exit status 0 (successful).
+ DEBUG [092ff106] Running [ -f /home/maw11_12/thecloud12.mycpnv.ch/current/REVISION ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [092ff106] Command: [ -f /home/maw11_12/thecloud12.mycpnv.ch/current/REVISION ]
+ DEBUG [092ff106] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [843ed75f] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [843ed75f] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [843ed75f] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [4212a12c] Running /usr/bin/env mkdir -p storage/app as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [4212a12c] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/app
+ DEBUG [4212a12c] 	Info: This virtualhost uses php80.
+  INFO [4212a12c] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [49a12c31] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [49a12c31] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [49a12c31] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [4fbd6c86] Running /usr/bin/env mkdir -p storage/framework/cache as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [4fbd6c86] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/cache
+ DEBUG [4fbd6c86] 	Info: This virtualhost uses php80.
+  INFO [4fbd6c86] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [aaabb00c] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [aaabb00c] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [aaabb00c] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [f802b654] Running /usr/bin/env mkdir -p storage/framework/sessions as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [f802b654] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/sessions
+ DEBUG [f802b654] 	Info: This virtualhost uses php80.
+  INFO [f802b654] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [c2a0518b] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [c2a0518b] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [c2a0518b] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [ccd73f21] Running /usr/bin/env mkdir -p storage/framework/views as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [ccd73f21] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/views
+ DEBUG [ccd73f21] 	Info: This virtualhost uses php80.
+  INFO [ccd73f21] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [f2d63946] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [f2d63946] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/shared; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [f2d63946] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [2bc5abe1] Running /usr/bin/env mkdir -p storage/logs as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [2bc5abe1] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/logs
+ DEBUG [2bc5abe1] 	Info: This virtualhost uses php80.
+  INFO [2bc5abe1] Finished in 0.089 seconds with exit status 0 (successful).
+ DEBUG [b4f3a5e4] Running [ -f /home/maw11_12/thecloud12.mycpnv.ch/repo/HEAD ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [b4f3a5e4] Command: [ -f /home/maw11_12/thecloud12.mycpnv.ch/repo/HEAD ]
+ DEBUG [b4f3a5e4] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/maw11_12/thecloud12.mycpnv.ch/repo
+ DEBUG [e93af53d] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [e93af53d] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [e93af53d] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [7e3bb332] Running /usr/bin/env git remote set-url origin https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [7e3bb332] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b49a2a046e1cd18ed281.sh" ; /usr/bin/env git remote set-url origin https://github.com/CPNV-ES/CLD2-2022-pictures-galleries.git )
+ DEBUG [7e3bb332] 	Info: This virtualhost uses php80.
+  INFO [7e3bb332] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [9902176b] Running /usr/bin/env git remote update --prune as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [9902176b] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b49a2a046e1cd18ed281.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9902176b] 	Info: This virtualhost uses php80.
+ DEBUG [9902176b] 	Fetching origin
+  INFO [9902176b] Finished in 0.297 seconds with exit status 0 (successful).
+ DEBUG [6a1fc915] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [6a1fc915] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [6a1fc915] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [94f72249] Running /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [94f72249] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b49a2a046e1cd18ed281.sh" ; /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 )
+ DEBUG [94f72249] 	Info: This virtualhost uses php80.
+  INFO [94f72249] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [8c882189] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [8c882189] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b49a2a046e1cd18ed281.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 )
+ DEBUG [8c882189] 	Info: This virtualhost uses php80.
+  INFO [8c882189] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [94e476e2] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [94e476e2] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/repo; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [94e476e2] Finished in 0.086 seconds with exit status 0 (successful).
+ DEBUG [02789221] Running /usr/bin/env git rev-list --max-count=1 main as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [02789221] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b49a2a046e1cd18ed281.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [02789221] 	Info: This virtualhost uses php80.
+ DEBUG [02789221] 	2d434bfb76ecadc72c37bf66e285a6e001bbbe21
+ DEBUG [02789221] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [04c33040] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [04c33040] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302'" 1>&2; false; fi
+ DEBUG [04c33040] Finished in 0.085 seconds with exit status 0 (successful).
+  INFO [cf9a9c58] Running /usr/bin/env echo "Info: This virtualhost uses php80.
+2d434bfb76ecadc72c37bf66e285a6e001bbbe21" > REVISION as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [cf9a9c58] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 && /usr/bin/env echo "Info: This virtualhost uses php80.
+2d434bfb76ecadc72c37bf66e285a6e001bbbe21" > REVISION
+ DEBUG [cf9a9c58] 	Info: This virtualhost uses php80.
+  INFO [cf9a9c58] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [48c32030] Running /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [48c32030] Command: /usr/bin/env mkdir -p /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework
+  INFO [48c32030] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [2c122ffc] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/app ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [2c122ffc] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/app ]
+ DEBUG [2c122ffc] Finished in 0.088 seconds with exit status 1 (failed).
+ DEBUG [35a98ba9] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/app ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [35a98ba9] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/app ]
+ DEBUG [35a98ba9] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [77a03f65] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/app as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [77a03f65] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/app
+  INFO [77a03f65] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [98749fb0] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/app /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/app as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [98749fb0] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/app /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/app
+  INFO [98749fb0] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [cbf1d467] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/cache ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [cbf1d467] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/cache ]
+ DEBUG [cbf1d467] Finished in 0.088 seconds with exit status 1 (failed).
+ DEBUG [0b1b147d] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/cache ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [0b1b147d] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/cache ]
+ DEBUG [0b1b147d] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [1bc7b5a9] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/cache as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [1bc7b5a9] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/cache
+  INFO [1bc7b5a9] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [0a091c2d] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/cache /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/cache as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [0a091c2d] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/cache /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/cache
+  INFO [0a091c2d] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [6ad75f08] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/sessions ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [6ad75f08] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/sessions ]
+ DEBUG [6ad75f08] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [0c2abf0c] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/sessions ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [0c2abf0c] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/sessions ]
+ DEBUG [0c2abf0c] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [0838ff14] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/sessions as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [0838ff14] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/sessions
+  INFO [0838ff14] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [5334cbb7] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/sessions /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/sessions as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [5334cbb7] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/sessions /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/sessions
+  INFO [5334cbb7] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [1bf8fd80] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/views ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [1bf8fd80] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/views ]
+ DEBUG [1bf8fd80] Finished in 0.091 seconds with exit status 1 (failed).
+ DEBUG [3e23b8ca] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/views ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [3e23b8ca] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/views ]
+ DEBUG [3e23b8ca] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [a356f67e] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/views as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [a356f67e] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/views
+  INFO [a356f67e] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [1b9c519a] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/views /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/views as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [1b9c519a] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/framework/views /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/framework/views
+  INFO [1b9c519a] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [9457f705] Running [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/logs ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [9457f705] Command: [ -L /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/logs ]
+ DEBUG [9457f705] Finished in 0.087 seconds with exit status 1 (failed).
+ DEBUG [0447f5ef] Running [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/logs ] as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [0447f5ef] Command: [ -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/logs ]
+ DEBUG [0447f5ef] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [79909320] Running /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/logs as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [79909320] Command: /usr/bin/env rm -rf /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/logs
+  INFO [79909320] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [cfbf5f0b] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/logs /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/logs as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [cfbf5f0b] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/shared/storage/logs /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/logs
+  INFO [cfbf5f0b] Finished in 0.087 seconds with exit status 0 (successful).
+ DEBUG [f343476b] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [f343476b] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302'" 1>&2; false; fi
+ DEBUG [f343476b] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [4b93076e] Running /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [4b93076e] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 && /usr/bin/env composer install --no-dev --prefer-dist --no-interaction --quiet --optimize-autoloader
+ DEBUG [4b93076e] 	Info: This virtualhost uses php80.
+  INFO [4b93076e] Finished in 1.825 seconds with exit status 0 (successful).
+ DEBUG [e07bc351] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [e07bc351] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302'" 1>&2; false; fi
+ DEBUG [e07bc351] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [b53abb8c] Running /usr/bin/env php artisan storage:link --env=production as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [b53abb8c] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 && /usr/bin/env php artisan storage:link --env=production
+ DEBUG [b53abb8c] 	Info: This virtualhost uses php80.
+ DEBUG [b53abb8c] 	The [/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/public/storage] link has been connected to [/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/storage/app/public].
+ DEBUG [b53abb8c] 	The links have been created.
+  INFO [b53abb8c] Finished in 0.229 seconds with exit status 0 (successful).
+  INFO [56541a3d] Running /usr/bin/env cp /home/maw11_12/thecloud12.mycpnv.ch/shared/.env /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/.env as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [56541a3d] Command: /usr/bin/env cp /home/maw11_12/thecloud12.mycpnv.ch/shared/.env /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302/.env
+  INFO [56541a3d] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [cdaf472c] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [cdaf472c] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302'" 1>&2; false; fi
+ DEBUG [cdaf472c] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [fc80d968] Running /usr/bin/env php artisan migrate --force --env=production as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [fc80d968] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 && /usr/bin/env php artisan migrate --force --env=production
+ DEBUG [fc80d968] 	Info: This virtualhost uses php80.
+ DEBUG [fc80d968] 	Migration table created successfully.
+ DEBUG [fc80d968] 	Migrating: 2014_10_12_000000_create_users_table
+ DEBUG [fc80d968] 	Migrated:  2014_10_12_000000_create_users_table (18.43ms)
+ DEBUG [fc80d968] 	Migrating: 2014_10_12_100000_create_password_resets_table
+ DEBUG [fc80d968] 	Migrated:  2014_10_12_100000_create_password_resets_table (14.91ms)
+ DEBUG [fc80d968] 	Migrating: 2019_08_19_000000_create_failed_jobs_table
+ DEBUG [fc80d968] 	Migrated:  2019_08_19_000000_create_failed_jobs_table (14.94ms)
+ DEBUG [fc80d968] 	Migrating: 2019_12_14_000001_create_personal_access_tokens_table
+ DEBUG [fc80d968] 	Migrated:  2019_12_14_000001_create_personal_access_tokens_table (23.25ms)
+ DEBUG [fc80d968] 	Migrating: 2022_02_09_144648_create_galleries_table
+ DEBUG [fc80d968] 	Migrated:  2022_02_09_144648_create_galleries_table (8.87ms)
+ DEBUG [fc80d968] 	Migrating: 2022_02_09_151803_create_pictures_table
+ DEBUG [fc80d968] 	Migrated:  2022_02_09_151803_create_pictures_table (8.24ms)
+  INFO [fc80d968] Finished in 0.351 seconds with exit status 0 (successful).
+  INFO [b307ab62] Running /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 /home/maw11_12/thecloud12.mycpnv.ch/releases/current as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [b307ab62] Command: /usr/bin/env ln -s /home/maw11_12/thecloud12.mycpnv.ch/releases/20220309154302 /home/maw11_12/thecloud12.mycpnv.ch/releases/current
+  INFO [b307ab62] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [377b5669] Running /usr/bin/env mv /home/maw11_12/thecloud12.mycpnv.ch/releases/current /home/maw11_12/thecloud12.mycpnv.ch as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [377b5669] Command: /usr/bin/env mv /home/maw11_12/thecloud12.mycpnv.ch/releases/current /home/maw11_12/thecloud12.mycpnv.ch
+  INFO [377b5669] Finished in 0.088 seconds with exit status 0 (successful).
+ DEBUG [debfea7b] Running /usr/bin/env ls -x /home/maw11_12/thecloud12.mycpnv.ch/releases as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [debfea7b] Command: /usr/bin/env ls -x /home/maw11_12/thecloud12.mycpnv.ch/releases
+ DEBUG [debfea7b] 	20220309153620	20220309154302
+ DEBUG [debfea7b] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [a8745e18] Running if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases'" 1>&2; false; fi as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [a8745e18] Command: if test ! -d /home/maw11_12/thecloud12.mycpnv.ch/releases; then echo "Directory does not exist '/home/maw11_12/thecloud12.mycpnv.ch/releases'" 1>&2; false; fi
+ DEBUG [a8745e18] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [9f867768] Running /usr/bin/env echo "Branch main (at Info: This virtualhost uses php80.
+2d434bfb76ecadc72c37bf66e285a6e001bbbe21) deployed as release 20220309154302 by abt" >> /home/maw11_12/thecloud12.mycpnv.ch/revisions.log as maw11_12@thecloud12.mycpnv.ch
+ DEBUG [9f867768] Command: cd /home/maw11_12/thecloud12.mycpnv.ch/releases && /usr/bin/env echo "Branch main (at Info: This virtualhost uses php80.
+2d434bfb76ecadc72c37bf66e285a6e001bbbe21) deployed as release 20220309154302 by abt" >> /home/maw11_12/thecloud12.mycpnv.ch/revisions.log
+ DEBUG [9f867768] 	Info: This virtualhost uses php80.
+  INFO [9f867768] Finished in 0.091 seconds with exit status 0 (successful).

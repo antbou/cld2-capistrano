@@ -3,9 +3,9 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server "thecloud2.mycpnv.ch", user: "maw11_11", ssh_options: {
-  user: 'maw11_11',
-  keys: %w(~/.ssh/id_rsa),
+server "thecloud12.mycpnv.ch", user: "maw11_12", ssh_options: {
+  user: 'maw11_12',
+  keys: %w(~/.ssh/swisscenter),
   forward_agent: false,
   auth_methods: %w(publickey)
 }
